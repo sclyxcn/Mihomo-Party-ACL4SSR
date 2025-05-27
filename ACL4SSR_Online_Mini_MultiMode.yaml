@@ -136,25 +136,16 @@ rule-providers:
     format: text
     type: http
   ChinaIp:
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
-    path: ./ruleset/ChinaIp.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMax/ChinaMax_IP.yaml
+    path: ./ruleset/ChinaMax_IP.yaml
     behavior: ipcidr
     interval: 86400
-    format: text
     type: http
   ChinaDomain:
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-    path: ./ruleset/ChinaDomain.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml
+    path: ./ruleset/ChinaMax_Domain.yaml
     behavior: domain
     interval: 86400
-    format: text
-    type: http
-  ChinaCompanyIp:
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-    path: ./ruleset/ChinaCompanyIp.list
-    behavior: ipcidr
-    interval: 86400
-    format: text
     type: http
 rules:
   #10.0.0.0/24和192.168.168.0/24为本人自用网段，可删除
@@ -165,10 +156,7 @@ rules:
   - "RULE-SET,GoogleCN,🎯 全球直连"
   - "RULE-SET,SteamCN,🎯 全球直连"
   - "RULE-SET,ProxyGFWlist,🚀 节点选择"
-  - "RULE-SET,ChinaIp,🎯 全球直连"
+  - "RULE-SET,ChinaIp,🎯 全球直连,no-resolve"
   - "RULE-SET,ChinaDomain,🎯 全球直连"
-  - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
   - "GEOIP,CN,🎯 全球直连"
   - "MATCH,🐟 漏网之鱼"
-  - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼
