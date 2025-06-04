@@ -164,11 +164,13 @@ rules:
   - "RULE-SET,ProxyGFWlist,🚀 节点选择"
   - "RULE-SET,ChinaDomain,🎯 全球直连"
   - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
-  # 自定义规则
+  #自定义规则
   - "DOMAIN-SUFFIX,openai.com,🚀 节点选择"
   - "DOMAIN-SUFFIX,bing.com,🎯 全球直连"
   - "DOMAIN-SUFFIX,a-nomad.com,🎯 全球直连"
   - "DOMAIN-SUFFIX,api2d.net,🎯 全球直连"
+  - "DOMAIN-SUFFIX,cosmicstudio.cn,🎯 全球直连"
+  - "DOMAIN-SUFFIX,kingdee.com,🎯 全球直连"  
   - "DOMAIN-KEYWORD,youtube,🚀 节点选择"
   - "DOMAIN,youtubei.googleapis.com,🚀 节点选择"
   - "DOMAIN,yt3.ggpht.com,🚀 节点选择"
